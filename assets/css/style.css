@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+/* Colours */
+
+.bg {
+    background-color: rgb(220, 220, 220);
+}
+
+.border-bottom {
+    border-bottom: 2px solid rgb(0, 0, 139);
+}
+
+
+/* Alignment */
+
+.clearfix {
+    overflow: auto;
+}
+
+
+/************************************************/
+
+
+/* main */
+
+section {
+    min-height: 80vh;
+}
+
+footer {
+    min-height: 20vh;
+}
+
+
+/************************************************/
+
+
+/* header */
+
+#logo-header {
+    /* Change from block to inline-block */
+    display: inline-block;
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.4em;
+    color: rgb(128, 123, 0);
+    text-shadow: 1px 1px rgb(0, 0, 139);
+}
+
+#globe {
+    padding: 0.4rem 0 0 0.5rem;
+    float: left;
+}
+
+#logo-abbreviation {
+    display: none;
+}
+
+#full-logo {
+    display: inline-block;
+}
+
+.navigation-bar {
+    padding-bottom: 0.5rem;
+}
+
+.main-navigation {
+    list-style-type: none;
+    display: none;
+}
+
+.main-navigation li {
+    text-align: left;
+    margin: 0.5rem 0 0 2rem;
+}
+
+.nav-links {
+    /* removes decoraions form a tags */
+    text-decoration: none;
+    color: rgb(128, 123, 0);
+    font-weight: 900;
+    letter-spacing: 0.07em;
+}
+
+.nav-links:hover {
+    color: rgb(44, 43, 2);
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 2.2rem;
+    color: rgb(150, 140, 102);
+}
+
+.active {
+    display: block;
+}
+
+
+/************************************************/
+
+
+/* Media queries */
+
+
+/* I was building the application using the mobile-first approach */
+
+@media only screen and (max-width: 312px) {
+    /* Extra small devices (phones, 312px and down) */
+    #logo-abbreviation {
+        display: inline-block;
+    }
+    #full-logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Extra small devices (phones, 600px and down) */
+}
+
+@media only screen and (min-width: 600px) {
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+}
+
+@media only screen and (min-width: 768px) {
+    /* Medium devices (landscape tablets, 768px and up) */
+    .navigation-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-navigation {
+        display: flex;
+        flex-direction: row;
+        margin-right: 1rem;
+    }
+    .main-navigation li {
+        margin: 5px;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Large devices (laptops/desktops, 992px and up) */
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+}
+
+
+/************************************************/
